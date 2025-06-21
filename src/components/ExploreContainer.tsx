@@ -8,6 +8,7 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
     <div id="container">
       <strong>Ready to create an app?</strong>
       <p>Hello, I am Prakahs</p>
+      <p>welcome onboard</p>
     </div>
   );
 };
