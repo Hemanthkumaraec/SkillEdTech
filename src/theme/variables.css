@@ -1,2 +1,8 @@
-/* For information on how to create your own theme, please see:
-http://ionicframework.com/docs/theming/ */
+:root {
+  --primary-dark-navy: #1a174c;
+  --accent-teal-aqua: #0ebea3;
+  --accent-orange: #fc8f0d;
+  --neutral-light-grey: #f0f2f5; /* For text on dark backgrounds, and general light background */
+  --neutral-medium-grey: #6c757d;
+  --light-teal-mint: #d6ffee;
+}

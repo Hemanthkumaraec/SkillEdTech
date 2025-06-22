@@ -1,0 +1,177 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url('../../assets/elements/main-slider-bg-2-1.png') no-repeat center center/cover;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Animated Background Area */
+.hero-container .animated-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* All Shapes */
+.hero-container .hero-shape {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  animation: heroFloat 20s infinite ease-in-out alternate;
+  filter: blur(2px);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Shape Variants */
+.hero-container .hero-shape1 {
+  top: 10%;
+  left: 5%;
+  width: 80px;
+  height: 80px;
+  background-image: url('../../assets/elements/main-slider-shape-2-1.png'); /* Use your orange star image */
+  animation-delay: 0s;
+}
+
+.hero-container .hero-shape2 {
+  bottom: 15%;
+  left: 10%;
+  width: 120px;
+  height: 120px;
+  background-image: url('../../assets/elements/main-slider-shape-2-2.png'); /* Use your orange hexagon image */
+  animation-delay: 2s;
+  animation-duration: 25s;
+}
+
+.hero-container .hero-shape3 {
+  top: 25%;
+  right: 8%;
+  width: 100px;
+  height: 100px;
+  background-image: url('../../assets/elements/main-slider-shape-2-3.png'); /* Use your blue diamond image */
+  animation-delay: 4s;
+}
+
+.hero-container .hero-shape4 {
+  bottom: 20%;
+  right: 12%;
+  width: 70px;
+  height: 70px;
+  background-image: url('../../assets/elements/main-slider-shape-2-4.png'); /* Use your orange circle image */
+  animation-delay: 6s;
+  animation-duration: 22s;
+}
+
+.hero-container .hero-shape5 {
+  top: 50%;
+  left: 40%;
+  width: 90px;
+  height: 90px;
+  background-image: url('../../assets/elements/main-slider-shape-2-5.png'); /* Use your orange diamond image */
+  animation-delay: 8s;
+  animation-duration: 18s;
+}
+
+/* Float Animation */
+@keyframes heroFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(15deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-15deg);
+  }
+}
+
+@keyframes heroRotateIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) rotate(0deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1) rotate(180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+@keyframes heroBounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(60px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1) translateY(-20px);
+  }
+  80% {
+    transform: scale(0.95) translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes heroRotateOppositeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) rotate(0deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1) rotate(-180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-360deg);
+  }
+}
+
+/* Hero Content */
+.hero-container .hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: #1a174c;
+  padding: 20px;
+}
+
+.hero-container .hero-subtitle {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-container .hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.hero-container .hero-button {
+  padding: 10px 20px;
+  background-color: #1a174c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-container .hero-button:hover {
+  background-color: #000000;
+}
